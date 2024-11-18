@@ -1,5 +1,8 @@
 @import './base/reset';
 @import './base/base';
 @import './utils/variables';
-@import './utils/typhographi';
+@import './utils/mixin';
+@import './base/typhography';
 @import './layout/grids';
+
+@import './сomponents/header';
