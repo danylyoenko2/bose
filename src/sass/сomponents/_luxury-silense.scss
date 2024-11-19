@@ -1,0 +1,26 @@
+.silense__title, 
+.technology__title,
+.guarantees__title{
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: $colorTextTitle;
+}
+
+.features__title,
+.technology__subtitle,
+.guarantees__item-title{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: $colorTextTitle;
+}
+.features__description,
+.technology__description,
+.guarantees__item-description{
+    font-size: 20px;
+    line-height: 1.45;
+    font-weight: 400;
+    color: rgba($colorTextWhite, 0.8);
+
+}
