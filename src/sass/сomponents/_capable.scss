@@ -2,13 +2,15 @@
     font-family: $fontFamily;
     font-weight: 600;
     font-size: 54px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: $colorTextTitle;
 }
 .capable__item{
 font-family: $fontFamily;
+font-weight: 400;
 font-size: 20px;
-
+line-height: 1.4;
 color: rgba(255, 255, 255, 0.8);
 }
