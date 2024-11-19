@@ -2,7 +2,7 @@
 font-family: $fontFamily;
 font-weight: 600;
 font-size: 54px;
-
+line-height: 1.2%;
 letter-spacing: 0.02em;
 text-transform: uppercase;
 color: $colorTextTitle;
@@ -11,12 +11,12 @@ color: $colorTextTitle;
     font-family: $fontFamily;
     font-weight: 600;
     font-size: 28px;
-    
+    line-height: 1.2%;
     color: $colorTextTitle;
 }
 .work__text{
-    font-family: $fontFamily;
+    font-family: var(--font-family);
     font-size: 20px;
-    
+    line-height: 1.4%;
     color: rgba(255, 255, 255, 0.8);
 }
