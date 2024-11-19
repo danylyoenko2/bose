@@ -6,10 +6,16 @@
 }
 .feedbacks {
   display: flex;
+  justify-content: space-between;
   background-color: $colorBgBose;
+  margin-top: 170px;
+  margin-left: 190px;
 }
 .feedback__help {
   margin-right: 150px;
+}
+.footer__forms {
+  margin-right: 190px;
 }
 .footer {
   display: flex;
