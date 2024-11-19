@@ -1,9 +1,28 @@
-.footer {
-  background-color: gray;
-  min-width: 1440px;
-  height: 950px;
+* {
+  background-color: $colorBgBose;
 }
-.help__title {
+.footer__sigmawomen {
+  background-color: $colorBgBose;
+}
+.feedbacks {
+  display: flex;
+  background-color: $colorBgBose;
+}
+.feedback__help {
+  margin-right: 150px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $colorBgBose;
+  margin-top: 300px;
+}
+.footer_infoposts {
+  display: flex;
+}
+
+.feedback__title {
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 54px;
@@ -11,20 +30,24 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #e7e7e7;
+  margin-bottom: 50px;
 }
-.help__text {
+.feedback__textt {
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 28px;
   line-height: 125%;
   color: #e7e7e7;
 }
-.footer_form {
+
+.pokaifu {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 20px;
   line-height: 70%;
   color: rgba(255, 255, 255, 0.3);
+  margin-top: 40px;
+  margin-bottom: 15px;
 }
 .footer-legitcheck {
   font-family: var(--font-family);
@@ -32,6 +55,9 @@
   font-size: 16px;
   line-height: 160%;
   color: #e9edfa;
+}
+.eshkere {
+  text-decoration: underline;
 }
 .footer__button {
   font-family: var(--font-family);
