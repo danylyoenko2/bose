@@ -1,22 +1,31 @@
+.container__work{
+background-color: black;
+}
+.container__photo{
+width: 280px;
+}
 .work__title{
 font-family: $fontFamily;
 font-weight: 600;
-font-size: 54px;
+font-size: 24px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 text-transform: uppercase;
 color: $colorTextTitle;
+margin-bottom:32px;
 }
 .work__titles{
-    font-family: $fontFamily;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 1.2;
-    color: $colorTextTitle;
+font-family: $fontFamily;
+font-weight: 600;
+font-size: 20px;
+line-height: 1.2;
+margin-bottom:16px;
+color: $colorTextTitle;
 }
 .work__text{
-    font-family: var(--font-family);
-    font-size: 20px;
-    line-height: 1.4;
-    color: rgba(255, 255, 255, 0.8);
+font-family: var(--font-family);
+font-size: 14px;
+line-height: 1.4;
+margin-bottom: 28px;
+color: rgba(255, 255, 255, 0.8);
 }
