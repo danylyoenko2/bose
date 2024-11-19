@@ -1,0 +1,22 @@
+.work__title{
+font-family: $fontFamily;
+font-weight: 600;
+font-size: 54px;
+line-height: 120%;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: $colorTextTitle;
+}
+.work__titles{
+    font-family: $fontFamily;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 125%;
+    color: $colorTextTitle;
+}
+.work__text{
+    font-family: $fontFamily;
+    font-size: 20px;
+    line-height: 145%;
+    color: rgba(255, 255, 255, 0.8);
+}
