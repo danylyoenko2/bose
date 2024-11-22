@@ -1,4 +1,6 @@
-
+.container__work{
+    background-color: black;
+}
 .container__photo{
 width: 280px;
 }
@@ -26,4 +28,23 @@ font-size: 14px;
 line-height: 1.4;
 margin-bottom: 28px;
 color: rgba(255, 255, 255, 0.8);
+}
+// tablet
+@media (min-width: 768px){
+    .fullscreen-container{
+        display: flex;
+    }
+    .work__body{
+     display: flex;
+     flex-direction: row-reverse;
+
+    }
+.design{
+    max-width: 300px;
+    margin-left: 60px;
+}  
+.work__title{
+    font-size: 30px;
+} 
+
 }
