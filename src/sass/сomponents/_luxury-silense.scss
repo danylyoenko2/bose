@@ -1,44 +1,71 @@
-
 .silense__container{
-    padding-inline: 20px;
+    padding-top: 52px;
+    background-color: rgb(73, 72, 72);
 }
+
 .silense__title{
-    position: absolute;
-    right: 80px;
+    text-align: end;
 }
 .features{
+    padding-top: 32px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 42px;
 
+}
+.features__text{
+    padding-top: 16px;
+}
+.features__img{
+    min-height: 293px;    
+}
+
+
+
+// -------------------
+
+.technology__title{
+    padding-top: 52px
+}
+.technology__description{
+    padding: 16px 0px 32px 0px;
+}
+
+// -------------------
+.guarantees{
+    padding-top: 52px;
+}
+.guarantees__list{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 32px;
+}
+
+.guarantees__item-title{
+    padding: 0px 0px 16px 0px;
 }
 
 
 
 
-.silense__title, 
+// Применение плейсхолдеров
+.silense__title,
 .technology__title,
-.guarantees__title{
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.2;
-    color: $colorTextTitle;
-    padding-bottom: 50px;
+.guarantees__title {
+  @extend %title-large;
 }
 
 .features__title,
 .technology__subtitle,
-.guarantees__item-title{
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 1.25;
-    color: $colorTextTitle;
+.guarantees__item-title {
+  @extend %title-medium;
 }
+
 .features__description,
 .technology__description,
-.guarantees__item-description{
-    font-size: 14px;
-    line-height: 1.45;
-    font-weight: 400;
-    color: rgba($colorTextWhite, 0.8);
-
+.guarantees__item-description {
+  @extend %description-small;
 }
+
+
