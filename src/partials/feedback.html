@@ -1,5 +1,4 @@
 <section class="feedback">
-  <!-- <img class="footer__sigmawomen" src="./images/sigmawomen.jpg" alt="#" /> -->
   <div class="feedbacks">
     <div class="feedback__help">
       <h2 class="feedback__title">Feedback</h2>
@@ -8,16 +7,31 @@
       </p>
     </div>
     <form class="footer__forms">
-      <p class="pokaifu">Your name</p>
-      <input type="text" required name="name" id="name" />
-      <p class="pokaifu">Your e-mail</p>
-      <input type="email" required name="email" id="email" />
-      <p class="pokaifu">Send us a message</p>
-      <input type="text" required name="text" id="text" />
-
+      <p class="imput__text imput__text__first">Your name</p>
+      <input class="footer__form" type="text" required name="name" id="name" />
+      <p class="imput__text imput__text__second">Your e-mail</p>
+      <input
+        class="footer__form"
+        type="email"
+        required
+        name="email"
+        id="email"
+      />
+      <p class="imput__text imput__text__third">Send us a message</p>
+      <input
+        class="footer__form footer__form__space"
+        type="text"
+        required
+        name="text"
+        id="text"
+      />
       <div class="footer-legitcheck">
-        I agree to the
-        <span class="eshkere"><a href="">privacy policy</a> </span>
+        <input type="checkbox" id="checkbox" class="hidden-checkbox" />
+        <label class="checkbox-label" for="checkbox"></label>
+        <p class="legitcheck__p">
+          I agree to the
+          <span class="eshkere"><a href="">privacy policy</a></span>
+        </p>
       </div>
       <button class="footer__button">Send</button>
     </form>

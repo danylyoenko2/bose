@@ -1,0 +1,159 @@
+/*=========================================== Global Styles ===========================================*/
+/*=========================================== Global Styles ===========================================*/
+/*=========================================== Global Styles ===========================================*/
+* {
+  background-color: $colorBgBose;
+}
+
+/*=========================================== Feedback Section ===========================================*/
+/*=========================================== Feedback Section ===========================================*/
+/*=========================================== Feedback Section ===========================================*/
+.feedbacks {
+  display: flex;
+  justify-content: space-between;
+  background-color: $colorBgBose;
+  margin-top: 170px;
+  margin-left: 190px;
+  margin-bottom: 500px;
+}
+
+.feedback__help {
+  margin-right: 150px;
+}
+
+.feedback__title {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $colorTextTitle;
+  margin-bottom: 50px;
+}
+
+.feedback__textt {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 125%;
+  color: $colorTextTitle;
+}
+
+/*=========================================== Footer Forms ===========================================*/
+/*=========================================== Footer Forms ===========================================*/
+/*=========================================== Footer Forms ===========================================*/
+
+.footer__forms {
+  margin-right: 190px;
+}
+
+.imput__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 0.7;
+  color: $colorFeedbackLine;
+  margin-bottom: 15px;
+}
+
+.imput__text__second {
+  margin-top: 40px;
+}
+
+.imput__text__third {
+  margin-top: 40px;
+  margin-bottom: 95px;
+}
+
+.footer__form {
+  border: none;
+  border-bottom: 1px solid $colorFeedbackLine;
+  background-color: transparent;
+  width: 510px;
+  color: $colorTextWhite;
+  outline: none;
+}
+
+.footer__form__space {
+  margin-bottom: 50px;
+}
+
+.footer__button {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+  display: inline-block;
+  border: 1px solid $colorTextAccent;
+  width: 510px;
+  height: 68px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.footer__button:hover {
+  transition: 0.3s ease;
+  box-shadow: 0px 0px 30px 0px rgba(223, 61, 58, 1);
+}
+
+/* Checkbox */
+.footer-legitcheck {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: $colorTextWhite;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.legitcheck__p {
+  margin-left: 30px;
+}
+
+.checkbox-label {
+  position: relative;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.checkbox-label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border: 2px solid $colorTextWhite;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+.checkbox-label:hover::before {
+  border-color: $colorTextWhite;
+}
+
+.checkbox-label:active::before {
+  background-color: $colorTextAccent;
+}
+
+.hidden-checkbox {
+  display: none;
+}
+
+.hidden-checkbox:checked + .checkbox-label::before {
+  background-color: $colorTextAccent;
+}
+
+/*=========================================== Linkss ===========================================*/
+/*=========================================== Linkss ===========================================*/
+/*=========================================== Linkss ===========================================*/
+.eshkere {
+  text-decoration: underline;
+}
