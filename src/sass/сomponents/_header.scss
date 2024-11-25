@@ -1,12 +1,11 @@
 .header {
   padding-block: 30px;
   position: relative;
-  transition: background-color 0.4s ease;
+  background-color: $colorBgBose;
 
   &.active {
     position: fixed;
     inset: 0;
-    background-color: $colorBgBose;
     z-index: 10;
   }
 }
@@ -34,7 +33,7 @@
   &.open {
     position: absolute;
     top: 52px;
-    animation: showMenu 0.4s ease;
+    animation: showMenu 0.5s ease;
   }
 }
 
@@ -143,6 +142,7 @@
       left: 0;
       box-shadow: 0 20px 80px 0 #000;
       padding-block: 50px 100px;
+      animation: showTabletMenu 0.5s ease;
     }
   }
 
@@ -199,6 +199,8 @@
   }
 }
 
+// KEYFRAMES
+
 @keyframes showMenu {
   from {
     display: none;
@@ -213,5 +215,15 @@
   to {
     display: flex;
     transform: translateX(0);
+  }
+}
+
+@keyframes showTabletMenu {
+  from {
+    padding-block: 50px;
+  }
+
+  to {
+    padding-block: 50px 100px;
   }
 }

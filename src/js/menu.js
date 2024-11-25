@@ -9,5 +9,8 @@ btn.addEventListener('click', function () {
 
   document.querySelector('.header').classList.toggle('active');
   document.querySelector('.hero').classList.toggle('active');
-  document.querySelector('body').classList.toggle('no-scroll');
+
+  if (innerWidth < 768) {
+    document.querySelector('body').classList.toggle('no-scroll');
+  }
 });
