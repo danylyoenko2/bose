@@ -1,3 +1,6 @@
+.capable__container{
+    background-color: black;
+}
 .capable__title{
 font-family: $fontFamily;
 font-weight: 600;
@@ -5,6 +8,7 @@ font-size: 24px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 margin-bottom: 32px;
+max-width: 150px;
 text-transform: uppercase;
 color: $colorTextTitle;
     
@@ -33,4 +37,12 @@ height: 13px;
 border-radius: 50%;
 background-color: $colorTextAccent;
 margin-right: 24px;
+}
+// tablet
+@media(min-width: 768px){
+    .capable__title{
+        height: 36px;
+        max-width: 550px;
+        font-size: 30px;
+    }
 }
