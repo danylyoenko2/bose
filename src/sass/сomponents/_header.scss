@@ -1,11 +1,13 @@
 .header {
   padding-block: 30px;
   position: relative;
+  transition: background-color 0.4s ease;
 
   &.active {
     position: fixed;
     inset: 0;
     background-color: $colorBgBose;
+    z-index: 10;
   }
 }
 
@@ -14,6 +16,12 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+}
+
+.header__mixer {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .logo__img {
@@ -26,7 +34,7 @@
   &.open {
     position: absolute;
     top: 52px;
-    animation: show 0.5s ease;
+    animation: showMenu 0.4s ease;
   }
 }
 
@@ -40,6 +48,20 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.25;
+  @include color($colorTextWhite, 0.8);
+  transition: color 0.3s ease;
+
+  @media (hover: hover) {
+    &:hover {
+      color: $colorTextAccent;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      color: $colorTextAccent;
+    }
+  }
 }
 
 .open {
@@ -108,7 +130,76 @@
   }
 }
 
-@keyframes show {
+// MEDIA
+
+@media (min-width: 768px) {
+  .header {
+    padding-block: 50px;
+
+    &.active {
+      position: absolute;
+      inset: inherit;
+      right: 0;
+      left: 0;
+      box-shadow: 0 20px 80px 0 #000;
+      padding-block: 50px 100px;
+    }
+  }
+
+  .header__container {
+    padding-inline: 60px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 52px;
+  }
+
+  .nav {
+    &.open {
+      top: inherit;
+      position: relative;
+    }
+  }
+
+  .menu__link {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    padding-block: 65px 70px;
+  }
+
+  .header__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: inherit;
+  }
+
+  .header__mixer {
+    flex-grow: inherit;
+  }
+
+  .logo {
+    width: 130px;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .nav__menu {
+    flex-direction: row;
+    gap: 75px;
+  }
+
+  .burger {
+    display: none;
+  }
+}
+
+@keyframes showMenu {
   from {
     display: none;
     transform: translateX(-100%);
@@ -122,23 +213,5 @@
   to {
     display: flex;
     transform: translateX(0);
-  }
-}
-
-@media (min-width: 768px) {
-  .header {
-    &.active {
-      position: relative;
-    }
-  }
-
-  .nav {
-    &.open {
-      width: 100%;
-      background-color: #191919;
-      z-index: 10;
-      left: 0px;
-      padding: 20px;
-    }
   }
 }

@@ -8,5 +8,6 @@ btn.addEventListener('click', function () {
   btn.classList.toggle('active');
 
   document.querySelector('.header').classList.toggle('active');
+  document.querySelector('.hero').classList.toggle('active');
   document.querySelector('body').classList.toggle('no-scroll');
 });
