@@ -1,10 +1,7 @@
-.container__work{
-    background-color: black;
-}
 .container__photo{
 width: 280px;
 }
-.work__title{
+.design__title{
 font-family: $fontFamily;
 font-weight: 600;
 font-size: 24px;
@@ -14,7 +11,7 @@ text-transform: uppercase;
 color: $colorTextTitle;
 margin-bottom:32px;
 }
-.work__titles{
+.design__titles{
 font-family: $fontFamily;
 font-weight: 600;
 font-size: 20px;
@@ -22,7 +19,7 @@ line-height: 1.2;
 margin-bottom:16px;
 color: $colorTextTitle;
 }
-.work__text{
+.design__text{
 font-family: var(--font-family);
 font-size: 14px;
 line-height: 1.4;
@@ -34,7 +31,7 @@ color: rgba(255, 255, 255, 0.8);
     .fullscreen-container{
         display: flex;
     }
-    .work__body{
+    .design__body{
      display: flex;
      flex-direction: row-reverse;
 
@@ -43,8 +40,30 @@ color: rgba(255, 255, 255, 0.8);
     max-width: 300px;
     margin-left: 60px;
 }  
-.work__title{
+.design__title{
     font-size: 30px;
 } 
+.container__photo{
+    width: 354px;
+    }
 
+}
+@media(min-width: 1200px){
+    .design{
+        margin-left: 150px;
+    } 
+    .design__title{
+        font-size: 54px;
+        width: 464px;
+    }
+    .design__titles{
+        font-size: 28px;
+        width: 412px;
+    }
+    .design__text{
+        font-size: 20px;
+    }
+    .container__photo{
+        width: 590px;
+        }
 }
