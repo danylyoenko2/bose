@@ -1,0 +1,2 @@
+const e=document.querySelector(".nav"),t=document.querySelector(".burger");t.addEventListener("click",(function(){e.classList.toggle("open"),t.classList.toggle("active"),document.querySelector(".header").classList.toggle("active"),document.querySelector(".hero").classList.toggle("active"),innerWidth<768&&document.querySelector("body").classList.toggle("no-scroll")}));
+//# sourceMappingURL=index.2a07ee64.js.map
