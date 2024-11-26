@@ -1,11 +1,10 @@
-.container__work{
+.container__design{
     background-color: black;
 }
 .container__photo{
-width: 280px;
-}
-.work__title{
-font-family: $fontFamily;
+    width: 280px;
+    }
+.design__title{
 font-weight: 600;
 font-size: 24px;
 line-height: 1.2;
@@ -14,37 +13,59 @@ text-transform: uppercase;
 color: $colorTextTitle;
 margin-bottom:32px;
 }
-.work__titles{
-font-family: $fontFamily;
+.design__titles{
 font-weight: 600;
 font-size: 20px;
 line-height: 1.2;
 margin-bottom:16px;
 color: $colorTextTitle;
 }
-.work__text{
-font-family: var(--font-family);
+.design__text{
 font-size: 14px;
 line-height: 1.4;
 margin-bottom: 28px;
 color: rgba(255, 255, 255, 0.8);
 }
+
 // tablet
 @media (min-width: 768px){
     .fullscreen-container{
         display: flex;
     }
-    .work__body{
+    .design__body{
      display: flex;
      flex-direction: row-reverse;
 
     }
-.design{
+    .design{
     max-width: 300px;
     margin-left: 60px;
-}  
-.work__title{
+    }  
+    .design__title{
     font-size: 30px;
-} 
+    } 
 
+}
+@media (min-width: 1200px){
+    .design__body{
+     display: flex;
+     flex-direction: row-reverse;
+
+    }
+    .container__photo{
+        width: 590px;
+        }
+    .design{
+        max-width: 464px;
+        margin-left: 150px;
+    }  
+    .design__title{
+        font-size: 54px;
+    } 
+    .design__titles{
+        font-size: 28px;
+    } 
+    .design__text{
+        font-size: 20px;
+    }
 }
