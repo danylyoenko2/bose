@@ -53,6 +53,7 @@
   line-height: 0.7;
   color: $colorFeedbackLine;
   margin-bottom: 15px;
+  position: relative;
 }
 
 .imput__text__second {
@@ -153,7 +154,9 @@
       height 0.5s ease-out 0.75s; // And finally height
   }
 }
-/* Checkbox */
+/* =========================================== Checkbox  ===========================================*/
+/* =========================================== Checkbox  ===========================================*/
+/* =========================================== Checkbox  ===========================================*/
 .footer-privacy {
   font-weight: 400;
   font-size: 16px;
@@ -183,16 +186,7 @@
   width: 30px;
   height: 30px;
   border: 2px solid $colorTextWhite;
-  background-color: transparent;
   transition: background-color 0.3s;
-}
-
-.checkbox-label:hover::before {
-  border-color: $colorTextWhite;
-}
-
-.checkbox-label:active::before {
-  background-color: $colorTextAccent;
 }
 
 .hidden-checkbox {
@@ -200,9 +194,12 @@
 }
 
 .hidden-checkbox:checked + .checkbox-label::before {
-  background-color: $colorTextAccent;
+  content: '✔';
+  color: $colorTextAccent;
+  font-size: 30px;
+  text-align: center;
+  line-height: 30px;
 }
-
 /*=========================================== Linkss ===========================================*/
 /*=========================================== Linkss ===========================================*/
 /*=========================================== Linkss ===========================================*/
