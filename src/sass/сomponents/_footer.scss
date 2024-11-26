@@ -7,18 +7,18 @@
   justify-content: space-between;
   align-items: center;
   background-color: $colorBgBose;
-  margin: 0 85px 77px 185px; // отступы: слева 185px, справа 85px, снизу 77px
+  margin: 0 85px 77px 185px;
 }
 .footer_infoposts {
   display: flex;
-  gap: 50px; // расстояние между ссылками 50px
+  gap: 50px;
 }
 
 .footer-infopost {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
-  line-height: 125%;
+  line-height: 1.25;
   color: rgba(255, 255, 255, 0.3);
 }
 .footer__number {
@@ -26,5 +26,5 @@
   font-weight: 400;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.8);
-  margin-left: 50px; // расстояние между ссылками и номером телефона
+  margin-left: 50px;
 }
