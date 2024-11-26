@@ -1,0 +1,127 @@
+.bose {
+  background: $colorBgBose;
+}
+
+.bose__title {
+  color: $colorTextTitle;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 1.20; 
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.bose__btn-box {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.bose__button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: solid $colorTextBose;
+}
+
+.bose__list {
+  margin-bottom: 50px;
+}
+
+.bose__item {
+  max-height: 70px;
+  max-width: 400px;
+  padding-block: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bose__item:first-child {
+  border-bottom: solid $colorTextBose;
+  border-top: solid $colorTextBose;
+}
+
+.bose__item:last-child {
+  border-bottom: solid $colorTextBose;
+  border-top: solid $colorTextBose;
+}
+
+.bose__text {
+  color: $colorTextBose;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.bose__subtitle {
+  color: $colorTextAccent;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 1.20; 
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.bose__submit-button {
+  width: 400px;
+  height: 68px;
+  background-color: $colorTextAccent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bose__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.bose__img-black {
+  width: 700px;
+  height: 664px;
+}
+
+.order-text {
+  color: $boseTextColor2;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.black {
+  background-color: $colorbutton;
+
+&::after {
+  content: "";
+  width: 54px;
+  height: 54px;
+  background-color: $colorBgBose;
+}
+
+&::after:hover,
+:focus {
+  border: solid $colorTextAccent;
+}
+
+}
+
+.white {
+  background-color: $colorTextBose;
+
+&::after {
+  content: "";
+  width: 54px;
+  height: 54px;
+  background-color: $boseTextColor2;
+}
+
+&::after:hover,
+:focus {
+  border: solid $colorTextAccent;
+}
+
+}
