@@ -1,79 +1,19 @@
 * {
   background-color: $colorBgBose;
 }
-.footer__sigmawomen {
-  background-color: $colorBgBose;
-}
-.feedbacks {
-  display: flex;
-  justify-content: space-between;
-  background-color: $colorBgBose;
-  margin-top: 170px;
-  margin-left: 190px;
-}
-.feedback__help {
-  margin-right: 150px;
-}
-.footer__forms {
-  margin-right: 190px;
-}
+
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: $colorBgBose;
-  margin-top: 300px;
+  margin: 0 85px 77px 185px; // отступы: слева 185px, справа 85px, снизу 77px
 }
 .footer_infoposts {
   display: flex;
+  gap: 50px; // расстояние между ссылками 50px
 }
 
-.feedback__title {
-  font-family: var(--font-family);
-  font-weight: 600;
-  font-size: 54px;
-  line-height: 120%;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: #e7e7e7;
-  margin-bottom: 50px;
-}
-.feedback__textt {
-  font-family: var(--font-family);
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 125%;
-  color: #e7e7e7;
-}
-
-.pokaifu {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 70%;
-  color: rgba(255, 255, 255, 0.3);
-  margin-top: 40px;
-  margin-bottom: 15px;
-}
-.footer-legitcheck {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
-  color: #e9edfa;
-}
-.eshkere {
-  text-decoration: underline;
-}
-.footer__button {
-  font-family: var(--font-family);
-  font-weight: 600;
-  font-size: 20px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.9);
-}
 .footer-infopost {
   font-family: var(--font-family);
   font-weight: 400;
@@ -86,4 +26,5 @@
   font-weight: 400;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.8);
+  margin-left: 50px; // расстояние между ссылками и номером телефона
 }
