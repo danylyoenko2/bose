@@ -1,10 +1,9 @@
-.container__design{
-    background-color: black;
-}
+
 .container__photo{
     width: 280px;
     }
 .design__title{
+font-family: $fontFamily;
 font-weight: 600;
 font-size: 24px;
 line-height: 1.2;
@@ -46,11 +45,20 @@ color: rgba(255, 255, 255, 0.8);
     } 
 
 }
-@media (min-width: 1200px){
-    .design__body{
-     display: flex;
-     flex-direction: row-reverse;
-
+@media(min-width: 1200px){
+    .design{
+        margin-left: 150px;
+    } 
+    .design__title{
+        font-size: 54px;
+        width: 464px;
+    }
+    .design__titles{
+        font-size: 28px;
+        width: 412px;
+    }
+    .design__text{
+        font-size: 20px;
     }
     .container__photo{
         width: 590px;
@@ -69,3 +77,4 @@ color: rgba(255, 255, 255, 0.8);
         font-size: 20px;
     }
 }
+
