@@ -1,3 +1,6 @@
 @mixin color($color, $opacity) {
   color: rgba($color, $opacity);
 }
+@mixin color-opacity($hex, $opacity) {
+  color: rgba(red($hex), green($hex), blue($hex), $opacity);
+}
