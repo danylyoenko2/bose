@@ -45,6 +45,8 @@
 
 .footer__forms {
   margin-right: 190px;
+  display: flex;
+  flex-direction: column;
 }
 
 .imput__text {
@@ -63,6 +65,7 @@
 .imput__text__third {
   margin-top: 40px;
   margin-bottom: 95px;
+  resize: none;
 }
 
 .footer__form {
@@ -72,10 +75,13 @@
   width: 510px;
   color: $colorTextWhite;
   outline: none;
-}
+  font-size: 20px;
 
-.footer__form__space {
-  margin-bottom: 50px;
+  padding-bottom: 20px;
+  &:user-invalid {
+    border-color: red;
+    color: red;
+  }
 }
 
 // Basic styles
