@@ -8,7 +8,7 @@
 /*=========================================== Feedback Section ===========================================*/
 /*=========================================== Feedback Section ===========================================*/
 /*=========================================== Feedback Section ===========================================*/
-.feedbacks {
+.container {
   display: flex;
   justify-content: space-between;
   background-color: $colorBgBose;
@@ -18,7 +18,8 @@
 }
 
 .feedback__help {
-  margin-right: 150px;
+  margin-right: 190px;
+  margin-left: 190px;
 }
 
 .feedback__title {
@@ -214,7 +215,7 @@
 /*=========================================== телефончек ===========================================*/
 
 @media (max-width: 480px) {
-  .feedbacks {
+  .container {
     flex-direction: column;
     margin: 0 auto;
     padding: 20px;
@@ -295,14 +296,14 @@
 }
 /*=========================================== планшетики ===========================================*/
 
-@media (min-width: 481px) and (max-width: 1024px) {
-  body {
+@media (min-width: 481px) and (max-width: 1200px) {
+  .feedbacks__container {
     display: flex;
   }
   .feedback {
     padding: 40px;
   }
-  .feedbacks {
+  .container {
     flex-direction: column;
     align-items: flex-start;
     margin: 0;
