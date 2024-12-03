@@ -1,8 +1,9 @@
 @import './base/reset';
+@import './base/base';
 @import './utils/variables';
 @import './utils/mixin';
+@import './utils/variables';
 @import './base/typhography';
-@import './base/base';
 @import './layout/grids';
 
 @import './сomponents/header';
@@ -11,6 +12,7 @@
 @import'./сomponents/work';
 @import './сomponents/reviews';
 @import './utils/placeholders';
+@import './сomponents/footer';
 
 
 
