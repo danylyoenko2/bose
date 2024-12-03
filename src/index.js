@@ -1,8 +1,7 @@
 import './js/menu';
+import './js/slider';
 
 
-// ========================== AOS
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
-AOS.init();
+
+
