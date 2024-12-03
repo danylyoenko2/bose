@@ -19,25 +19,24 @@
 
 .silense{
     padding-top: 52px;
-    background-color: rgb(73, 72, 72);
-}
-
-.silense__title{
-    text-align: end;
+    &__title{
+        text-align: center;
+    }
 }
 .features{
     padding-top: 32px;
     display: flex;
     flex-direction: column;
     gap: 42px;
+    &__text{
+        padding-top: 16px;
+    }
+    
+    &__item{
+        text-align: center;  
+    }
+}
 
-}
-.features__text{
-    padding-top: 16px;
-}
-.features__img{
-    min-height: 293px;    
-}
 
 
 
@@ -53,22 +52,123 @@
 // -------------------
 .guarantees{
     padding-top: 52px;
-}
-.guarantees__list{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding-bottom: 32px;
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding-bottom: 32px;
+    }
+    &__item-title{
+        padding: 24px 0px 16px 0px;
+    }
 }
 
-.guarantees__item-title{
-    padding: 0px 0px 16px 0px;
-}
 
 
 @media (min-width: 768px){
- 
+    
+    
+    
+    .silense__title{
+        text-align: end;
+        padding-right: 60px;
+
+    }
+    .features{
+        flex-direction: row;
+        gap: 60px;
+        max-width: 678px;
+
+        &__item{
+            text-align: left;  
+        }
+                
+    }
+
+    .technology{
+        padding-top: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        gap: 60px;
+        &__content{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            max-width: 294px;
+        }
+        &__title{
+         padding: 0;   
+        }
+        &__image{
+            max-width: 354px;
+            max-height: 297px;
+        }
+    }
+    
+    .guarantees{
+        padding-top: 100px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
+        gap: 60px;
+        &__content{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            max-width: 294px;
+        }
+        &__title{
+         padding: 0;   
+        }
+        &__image{
+            max-width: 354px;
+            max-height: 297px;
+        }
+        &__item-title{
+            padding: 24px 0px 20px 0px;
+        }
+    }  
 }
+
+@media (min-width: 1200px) { 
+    .features{
+        max-width: 1160px;
+    }
+    .technology{
+        padding-top: 170px;
+        gap: 170px;
+        &__content{
+            
+            max-width: 380px;
+        }
+        &__title{
+         padding: 0;   
+        }
+        &__image{
+            max-width: 700px;
+            max-height: 586px;
+        }
+    }
+    
+    .guarantees{
+        padding-top: 170px; 
+        gap: 170px;
+        &__content{
+            max-width: 380px;
+        }
+        &__title{
+         padding: 0;   
+        }
+        &__image{
+            max-width: 590px;
+            max-height: 569px;
+        }
+        &__item-title{
+            padding: 24px 0px 20px 0px;
+        }
+    }  
+  }
 
 
 
