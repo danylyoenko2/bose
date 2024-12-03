@@ -1,7 +1,22 @@
 @import './base/reset';
 @import './base/base';
+@import './utils/variables';
 @import './utils/mixin';
 @import './utils/variables';
 @import './base/typhography';
 @import './layout/grids';
+
+@import './сomponents/header';
+@import './сomponents/hero';
+@import './сomponents/luxury-silense';
+@import'./сomponents/work';
+@import './сomponents/reviews';
+@import './utils/placeholders';
 @import './сomponents/footer';
+
+
+
+
+
+
+
