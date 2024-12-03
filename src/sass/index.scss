@@ -2,15 +2,14 @@
 @import './base/base';
 @import './utils/variables';
 @import './utils/mixin';
-@import './utils/variables';
-@import './base/typhography';
 @import './utils/placeholders';
+@import './base/typhography';
 @import './layout/grids';
 
 @import './сomponents/header';
 @import './сomponents/hero';
-@import './сomponents/luxury-silense';
 @import'./сomponents/work';
+@import './сomponents/luxury-silense';
 @import './сomponents/reviews';
 @import './сomponents/feedback';
 @import './сomponents/footer';
