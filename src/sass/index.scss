@@ -1,9 +1,9 @@
 @import './base/reset';
 @import './utils/variables';
 @import './utils/mixin';
-@import './base/typhography';
-@import './base/base';
 @import './utils/placeholders';
+@import './base/base';
+@import './base/typhography';
 @import './layout/grids';
 
 @import './сomponents/header';
@@ -13,3 +13,7 @@
 @import './сomponents/luxury-silense';
 @import './сomponents/technology';
 @import './сomponents/guarantees';
+@import './сomponents/reviews';
+@import './сomponents/feedback';
+@import './сomponents/footer';
+
