@@ -4,7 +4,6 @@
   font-weight: 600;
   line-height: 1.2;
   color: $colorTextTitle;
-  padding-bottom: 32px;
 }
 
 %title-medium {
@@ -14,7 +13,6 @@
   color: $colorTextTitle;
 }
 
-
 %description-small {
   font-size: 14px;
   line-height: 1.45;
@@ -22,21 +20,19 @@
   color: rgba($colorTextWhite, 0.8);
 }
 
-
 @media (min-width: 768px) {
   %title-large {
     font-size: 30px;
   }
 
   %description-small {
-    font-size: 16px; 
+    font-size: 16px;
   }
 }
 
 @media (min-width: 1200px) {
   %title-large {
     font-size: 54px;
-    padding-bottom: 50px;
   }
 
   %title-medium {
@@ -44,6 +40,6 @@
   }
 
   %description-small {
-    font-size: 20px; 
+    font-size: 20px;
   }
 }

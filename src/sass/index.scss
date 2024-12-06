@@ -3,15 +3,13 @@
 @import './utils/mixin';
 @import './base/typhography';
 @import './base/base';
+@import './utils/placeholders';
 @import './layout/grids';
 
 @import './сomponents/header';
 @import './сomponents/hero';
-@import'./сomponents/work';
+@import './сomponents/work';
+@import './сomponents/capable';
 @import './сomponents/luxury-silense';
-@import './utils/placeholders';
-
-
-
-
-
+@import './сomponents/technology';
+@import './сomponents/guarantees';
