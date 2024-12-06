@@ -1,115 +1,24 @@
-<div class="silense fullscreen-container">
-  <h1 class="silense__title" >The Luxury of Silence</h1>
-  <div class="silense__image">
-    <picture>
-      <!-- Для ПК -->
-      <source
-        srcset="
-          ./images/pc-img/silense/silense-bg.webp 1x,
-          ./images/pc-img/silense/silense-bg@2x.webp 2x
-        "
-        type="image/webp"
-        media="(min-width: 1200px)"
-      />
-      <source
-        srcset="
-          ./images/pc-img/silense/silense-bg.jpg 1x,
-          ./images/pc-img/silense/silense-bg@2x.jpg 2x
-        "
-        type="image/jpeg"
-        media="(min-width: 1200px)"
-      />
+<section class="characteristics" id="characteristics">
+  <include src="./partials/work.html"></include>
+  <include src="./partials/capable.html"></include>
 
-      <!-- Для планшетов -->
-      <source
-        srcset="
-          ./images/tablet-img/silense/silense-bg.webp 1x,
-          ./images/tablet-img/silense/silense-bg@2x.webp 2x
-        "
-        type="image/webp"
-        media="(min-width: 768px) and (max-width: 1199px)"
-      />
-      <source
-        srcset="
-          ./images/tablet-img/silense/silense-bg.jpg 1x,
-          ./images/tablet-img/silense/silense-bg@2x.jpg 2x
-        "
-        type="image/jpeg"
-        media="(min-width: 768px) and (max-width: 1199px)"
-      />
-
-      <!-- Для мобильных устройств -->
-      <source
-        srcset="
-          ./images/mobile-img/silensebg-mobile.webp 1x,
-          ./images/mobile-img/silensebg-mobile@2x.webp 2x
-        "
-        type="image/webp"
-      />
-      <source
-        srcset="
-          ./images/mobile-img/silensebg-mobile.jpg 1x,
-          ./images/mobile-img/silensebg-mobile@2x.jpg 2x
-        "
-        type="image/jpeg"
-      />
-
-      <!-- Fallback изображение -->
-      <img
-        src="./images/mobile-img/silensebg-mobile.jpg"
-        alt="Bose headphones on a bench with sunset in the background"
-        class="silense__image-content"
-      />
-    </picture>
-  </div>
-</div>
-
-  <!-- Список характеристик -->
-  <div class="features features__container container">
-    <div class="features__item" >
-      <h2 class="features__title">Maximum enjoyment</h2>
-      <p class="features__text">
-        In order to create a comfortable atmosphere - raise the level by level
-        from the "transparent" mode to the maximum blocking of sounds. The
-        conversation mode can be activated in one click using a special button.
-      </p>
-    </div>
-    <div class="features__item" >
-      <h2 class="features__title">Crystal sound</h2>
-      <p class="features__text">
-        The speaker system and brand name active equalizer are able to provide
-        high-quality and powerful sound at any volume level. You can be sure of
-        no distortion and crystal clear at high and low frequencies.
-      </p>
-    </div>
-  </div>
-
-  <!-- Секция с технологией -->
-  <div class="technology fullscreen-container" >
-    <div class="technology__content">
-      <h2 class="technology__title">BOSE AR</h2>
-      <p class="technology__subtitle">Brand name technology</p>
-      <p class="technology__description">
-        Bose AR is a unique audio platform augmented reality, that opens before
-        you new facets of sound. It allows you to stay connected to the real world
-        and immerse yourself in the virtual universe at the same time.
-      </p>
-    </div>
-    <div class="technology__image">
+  <div class="silense">
+    <div class="fullscreen-container silence__container">
+      <h2 class="silense__title">The Luxury of Silence</h2>
       <picture>
         <!-- Для ПК -->
         <source
           srcset="
-            ./images/pc-img/silense/bose-ar.webp 1x,
-            ./images/pc-img/silense/bose-ar@2x.webp 2x
+            ./images/pc-img/silense/silense-bg.webp    1x,
+            ./images/pc-img/silense/silense-bg@2x.webp 2x
           "
           type="image/webp"
           media="(min-width: 1200px)"
         />
         <source
           srcset="
-            ./images/pc-img/silense/bose-ar.jpg 1x,
-            ./images/pc-img/silense/bose-ar@2x.jpg 2x
+            ./images/pc-img/silense/silense-bg.jpg    1x,
+            ./images/pc-img/silense/silense-bg@2x.jpg 2x
           "
           type="image/jpeg"
           media="(min-width: 1200px)"
@@ -118,120 +27,236 @@
         <!-- Для планшетов -->
         <source
           srcset="
-            ./images/tablet-img/silense/bose-ar.webp 1x,
-            ./images/tablet-img/silense/bose-ar@2x.webp 2x
+            ./images/tablet-img/silense/silense-bg.webp    1x,
+            ./images/tablet-img/silense/silense-bg@2x.webp 2x
           "
           type="image/webp"
           media="(min-width: 768px) and (max-width: 1199px)"
         />
         <source
           srcset="
-            ./images/tablet-img/silense/bose-ar.jpg 1x,
-            ./images/tablet-img/silense/bose-ar@2x.jpg 2x
+            ./images/tablet-img/silense/silense-bg.jpg    1x,
+            ./images/tablet-img/silense/silense-bg@2x.jpg 2x
           "
           type="image/jpeg"
           media="(min-width: 768px) and (max-width: 1199px)"
         />
 
+        <!-- Для мобильных устройств -->
+        <source
+          srcset="
+            ./images/mobile-img/silensebg-mobile.webp    1x,
+            ./images/mobile-img/silensebg-mobile@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/mobile-img/silensebg-mobile.jpg    1x,
+            ./images/mobile-img/silensebg-mobile@2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+
         <!-- Fallback изображение -->
         <img
-          src="./images/tablet-img/silense/bose-ar.jpg"
-          alt="Woman wearing Bose headphones"
-          class="technology__image-content"
+          src="./images/mobile-img/silensebg-mobile.jpg"
+          alt="Bose headphones on a bench with sunset in the background"
+          class="silense__image-content"
         />
       </picture>
+      <ul class="silence__list">
+        <li class="silence__item">
+          <h3 class="silence__title">Maximum enjoyment</h3>
+          <p class="silence__text">
+            In order to create a comfortable atmosphere - raise the level by
+            level from the "transparent" mode to the maximum blocking of sounds.
+            The conversation mode can be activated in one click using a special
+            button.
+          </p>
+        </li>
+        <li class="silence__item">
+          <h3 class="silence__title">Crystal sound</h3>
+          <p class="silence__text">
+            The speaker system and brand name active equalizer are able to
+            provide high-quality and powerful sound at any volume level. You can
+            be sure of no distortion and crystal clear at high and low
+            frequencies.
+          </p>
+        </li>
+      </ul>
     </div>
   </div>
 
-<!-- Гарантии -->
-<div class="guarantees fullscreen-container ">
-  <div class="guarantees__content">
-    <h2 class="guarantees__title">GUARANTEES</h2>
-    <ul class="guarantees__list">
-      <li class="guarantees__item">
-        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="6.5" cy="6.5" r="6.5" fill="#DF3D3A" />
-        </svg>
-        
-        <h3 class="guarantees__item-title">90 Day Money Back Guarantee</h3>
-        <p class="guarantees__item-description">
-          If you are not 100% satisfied with a product, you can return it back
-          for a full refund.
-        </p>
-      </li>
-      <li class="guarantees__item">
-        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="6.5" cy="6.5" r="6.5" fill="#DF3D3A" />
-        </svg>
-        
-        <h3 class="guarantees__item-title">1 year warranty</h3>
-        <p class="guarantees__item-description">
-          Regardless of your country of residence, if your headphones are
-          broken, we will send you new ones.
-        </p>
-      </li>
-    </ul>
-  </div>
-  <div class="guarantees__image">
-    <picture>
-      <!-- Изображения для мобильных устройств -->
-      <source
-        srcset="
-          ./images/pc-img/silense/guarntees.webp 1x,
-          ./images/pc-img/silense/guarntees@2x.webp 2x
-        "
-        type="image/webp"
-        media="(max-width: 767px)"
-      />
-      <source
-        srcset="
-          ./images/pc-img/silense/guarntees.jpg 1x,
-          ./images/pc-img/silense/guarntees@2x.jpg 2x
-        "
-        type="image/jpeg"
-        media="(max-width: 767px)"
-      />
-      <!-- Изображения для планшетов -->
-      <source
-        srcset="
-          ./images/tablet-img/silense/guarntees-tablet.webp 1x,
-          ./images/tablet-img/silense/guarntees-tablet@2x.webp 2x
-        "
-        type="image/webp"
-        media="(min-width: 768px) and (max-width: 1199px)"
-      />
-      <source
-        srcset="
-          ./images/tablet-img/silense/guarntees-tablet.jpg 1x,
-          ./images/tablet-img/silense/guarntees-tablet@2x.jpg 2x
-        "
-        type="image/jpeg"
-        media="(min-width: 768px) and (max-width: 1199px)"
-      />
-      <!-- Изображения для ПК -->
-      <source
-        srcset="
-          ./images/pc-img/silense/guarntees.webp 1x,
-          ./images/pc-img/silense/guarntees@2x.webp 2x
-        "
-        type="image/webp"
-        media="(min-width: 1200px)"
-      />
-      <source
-        srcset="
-          ./images/pc-img/silense/guarntees.jpg 1x,
-          ./images/pc-img/silense/guarntees@2x.jpg 2x
-        "
-        type="image/jpeg"
-        media="(min-width: 1200px)"
-      />
-      <!-- Основное изображение по умолчанию -->
-      <img
-        src="./images/pc-img/silense/guarntees.jpg"
-        alt="Bose headphones"
-        class="guarantees__image-content"
-      />
-    </picture>
+  <!-- Секция с технологией -->
+  <div class="technology">
+    <div class="fullscreen-container technology__container">
+      <div class="technology__content">
+        <h2 class="technology__title">BOSE AR</h2>
+        <div class="technology__about">
+          <p class="technology__subtitle">Brand name technology</p>
+          <p class="technology__description">
+            Bose AR is a unique audio platform augmented reality, that opens
+            before you new facets of sound. It allows you to stay connected to
+            the real world and immerse yourself in the virtual universe at the
+            same time.
+          </p>
+        </div>
+      </div>
+        <picture class="technology__photo">
+          <!-- Для ПК -->
+          <source
+            srcset="
+              ./images/pc-img/silense/bose-ar.webp    1x,
+              ./images/pc-img/silense/bose-ar@2x.webp 2x
+            "
+            type="image/webp"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/pc-img/silense/bose-ar.jpg    1x,
+              ./images/pc-img/silense/bose-ar@2x.jpg 2x
+            "
+            type="image/jpeg"
+            media="(min-width: 1200px)"
+          />
+  
+          <!-- Для планшетов -->
+          <source
+            srcset="
+              ./images/tablet-img/silense/bose-ar.webp    1x,
+              ./images/tablet-img/silense/bose-ar@2x.webp 2x
+            "
+            type="image/webp"
+            media="(min-width: 768px) and (max-width: 1199px)"
+          />
+          <source
+            srcset="
+              ./images/tablet-img/silense/bose-ar.jpg    1x,
+              ./images/tablet-img/silense/bose-ar@2x.jpg 2x
+            "
+            type="image/jpeg"
+            media="(min-width: 768px) and (max-width: 1199px)"
+          />
+  
+          <!-- Fallback изображение -->
+          <img
+            src="./images/tablet-img/silense/bose-ar.jpg"
+            alt="Woman wearing Bose headphones"
+            class="technology__image"
+          />
+        </picture>
+      </div>
+      
+    </div>
   </div>
 
-  
+  <!-- Гарантии -->
+  <div class="guarantees ">
+    <div class="fullscreen-container guarantees__container ">
+    <div class="guarantees__content">
+      <h2 class="guarantees__title">GUARANTEES</h2>
+      <ul class="guarantees__list">
+        <li class="guarantees__item">
+          <svg
+            width="13"
+            height="13"
+            viewBox="0 0 13 13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="guarantees__dot"
+          >
+            <circle cx="6.5" cy="6.5" r="6.5" fill="#DF3D3A" />
+          </svg>
+
+          <h3 class="guarantees__subtitle">90 Day Money Back Guarantee</h3>
+          <p class="guarantees__text">
+            If you are not 100% satisfied with a product, you can return it back
+            for a full refund.
+          </p>
+        </li>
+        <li class="guarantees__item">
+          <svg
+            width="13"
+            height="13"
+            viewBox="0 0 13 13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="guarantees__dot"
+          >
+            <circle cx="6.5" cy="6.5" r="6.5" fill="#DF3D3A" />
+          </svg>
+
+          <h3 class="guarantees__subtitle">1 year warranty</h3>
+          <p class="guarantees__text">
+            Regardless of your country of residence, if your headphones are
+            broken, we will send you new ones.
+          </p>
+        </li>
+      </ul>
+    </div>
+    
+      <picture class="guarantees__photo">
+        <!-- Изображения для мобильных устройств -->
+        <source
+          srcset="
+            ./images/pc-img/silense/guarntees.webp    1x,
+            ./images/pc-img/silense/guarntees@2x.webp 2x
+          "
+          type="image/webp"
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ./images/pc-img/silense/guarntees.jpg    1x,
+            ./images/pc-img/silense/guarntees@2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(max-width: 767px)"
+        />
+        <!-- Изображения для планшетов -->
+        <source
+          srcset="
+            ./images/tablet-img/silense/guarntees-tablet.webp    1x,
+            ./images/tablet-img/silense/guarntees-tablet@2x.webp 2x
+          "
+          type="image/webp"
+          media="(min-width: 768px) and (max-width: 1199px)"
+        />
+        <source
+          srcset="
+            ./images/tablet-img/silense/guarntees-tablet.jpg    1x,
+            ./images/tablet-img/silense/guarntees-tablet@2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(min-width: 768px) and (max-width: 1199px)"
+        />
+        <!-- Изображения для ПК -->
+        <source
+          srcset="
+            ./images/pc-img/silense/guarntees.webp    1x,
+            ./images/pc-img/silense/guarntees@2x.webp 2x
+          "
+          type="image/webp"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/pc-img/silense/guarntees.jpg    1x,
+            ./images/pc-img/silense/guarntees@2x.jpg 2x
+          "
+          type="image/jpeg"
+          media="(min-width: 1200px)"
+        />
+        <!-- Основное изображение по умолчанию -->
+        <img
+          src="./images/pc-img/silense/guarntees.jpg"
+          alt="Bose headphones"
+          class="guarantees__image"
+        />
+      </picture>
+    
+    </div>
+  </div>
+</section>
