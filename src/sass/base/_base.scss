@@ -1,4 +1,32 @@
 img {
   display: block;
   width: 100%;
+  height: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $colorBgBose;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  @include bg($colorTextTitle, 0);
+}
+
+::-webkit-scrollbar-track {
+  background-color: $colorBgBose;
+}
+
+::-webkit-scrollbar-thumb {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  @include bg($colorTextAccentPrimary, 0.4);
+
+  &:hover {
+    @include bg($colorTextAccentPrimary, 0.6);
+  }
 }
