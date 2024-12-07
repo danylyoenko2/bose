@@ -1,79 +1,69 @@
-.container__design{
-    background-color: black;
+.container__photo {
+  width: 280px;
 }
-.container__photo{
-    width: 280px;
-    }
-.design__title{
-font-family: $fontFamily;
-font-weight: 600;
-font-size: 24px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-text-transform: uppercase;
-color: $colorTextTitle;
-margin-bottom:32px;
+.design__title {
+  font-family: $fontFamily;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $colorTextTitle;
+  margin-bottom: 32px;
 }
-.design__titles{
-font-weight: 600;
-font-size: 20px;
-line-height: 1.2;
-margin-bottom:16px;
-color: $colorTextTitle;
+.design__titles {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  color: $colorTextTitle;
 }
-.design__text{
-font-size: 14px;
-line-height: 1.4;
-margin-bottom: 28px;
-color: rgba(255, 255, 255, 0.8);
+.design__text {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 28px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 // tablet
-@media (min-width: 768px){
-    .fullscreen-container{
-        display: flex;
-    }
-    .design__body{
-     display: flex;
-     flex-direction: row-reverse;
-
-    }
-    .design{
+@media (min-width: 768px) {
+  .fullscreen-container {
+    display: flex;
+  }
+  .design__body {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .design {
     max-width: 300px;
     padding-left: 60px;
-    } 
-    .design__title{
-        font-size: 30px;
-    
-    }
-    .design__titles{
-        font-size: 20px;
+  }
+  .design__title {
+    font-size: 30px;
+  }
+  .design__titles {
+    font-size: 20px;
+  }
 
-    }
-  
-    .container__photo{
-        width: 354px;
-        }
-
+  .container__photo {
+    width: 354px;
+  }
 }
-@media(min-width: 1200px){
-    .design{
-        max-width: 510px;
-        margin-left: 150px;
-    } 
-    .design__title{
-        font-size: 54px;
-    
-    }
-    .design__titles{
-        font-size: 28px;
-
-    }
-    .design__text{
-        font-size: 20px;
-    }
-    .container__photo{
-        width: 590px;
-        }
+@media (min-width: 1200px) {
+  .design {
+    max-width: 510px;
+    margin-left: 150px;
+  }
+  .design__title {
+    font-size: 54px;
+  }
+  .design__titles {
+    font-size: 28px;
+  }
+  .design__text {
+    font-size: 20px;
+  }
+  .container__photo {
+    width: 590px;
+  }
 }
-
