@@ -1,3 +1,6 @@
+.faq {
+  background-color: black;
+}
 .detail {
   border-bottom: 1px solid #333;
   margin-bottom: 15px;
@@ -5,17 +8,33 @@
 }
 
 .question {
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
   outline: none;
   color: #fff;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+.question_text {
+  max-width: 210px;
+  margin-left: 10px;
+  margin-right: 50px;
+  font-size: 14px;
+}
+.faq__number {
+  font-size: $colorTextTitle;
+  margin-right: 6px;
+  font-size: 20px;
 }
 
+.faq__title {
+  font-size: 24px;
+  padding-bottom: 34px;
+}
+.answer__text {
+  font-size: 12px;
+}
 .question:hover {
-  color: #1e90ff;
+  color: $colorTextAccent;
 }
 
 .question::marker {
@@ -27,10 +46,9 @@
   background: none;
   border: 1px solid #fff;
   border-radius: 50%;
-  color: #fff;
+  background-color: #fff;
   width: 25px;
   height: 25px;
-  font-size: 16px;
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -41,9 +59,9 @@
 }
 
 .question__btn:hover {
-  background-color: #1e90ff;
-  color: #121212;
-  border-color: #1e90ff;
+  background-color: $colorTextError;
+  color: #fff;
+  border-color: $colorTextError;
 }
 
 /* Tooltip */
@@ -52,9 +70,9 @@
   position: absolute;
   bottom: 35px;
   left: 50%;
-  transform: translateX(-50%);
-  background-color: #1e90ff;
-  color: #fff;
+  transform: translateX(-95%);
+  background-color: #fff;
+  color: #121212;
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 12px;
