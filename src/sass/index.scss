@@ -1,14 +1,10 @@
 @import './base/reset';
 @import './utils/variables';
 @import './utils/mixin';
-@import './base/typhography';
+@import './utils/placeholders';
 @import './base/base';
+@import './base/typhography';
 @import './layout/grids';
 @import './сomponents/header';
 @import './сomponents/hero';
-//  HEAD
-@import './сomponents/work';
 @import './сomponents/luxury-silense';
-@import './utils/placeholders';
-@import './сomponents/faq';
-//  main

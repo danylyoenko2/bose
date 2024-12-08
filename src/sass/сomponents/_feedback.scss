@@ -1,0 +1,303 @@
+body {
+  background-color: $colorBgBose;
+}
+.feedback__container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feedback__help {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+.feedback__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $colorTextTitle;
+}
+
+.feedback__text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $colorTextTitle;
+}
+
+// FORM
+
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.form__mixer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.form__input {
+  color: $colorFeedbackLine;
+  background-color: transparent;
+  padding-bottom: 16px;
+  font-size: 16px;
+  width: 100%;
+  border-bottom: 1px solid $colorFeedbackLine;
+
+  &:user-invalid {
+    border-color: $FormError;
+    color: $FormError;
+  }
+}
+
+.comment__input {
+  resize: none;
+  min-height: 80px;
+  border: none;
+  border-bottom: 1px solid $colorFeedbackLine;
+}
+
+.form__wrapper--checkbox {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.form__submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 20px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  background-color: transparent;
+  @include color($colorTextWhite, 0.9);
+  border: 1px solid $colorTextAccent;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.draw {
+  transition: border 0.25s ease;
+
+  &::before,
+  &::after {
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  &::before {
+    top: -2px;
+    left: -2px;
+    transition: ease, width 0.25s ease, height 0.25s ease 0.25s;
+  }
+
+  &::after {
+    bottom: -2px;
+    right: -2px;
+    transition: border-color 0.25s ease 0.5s, width 0.5s ease 0.5s,
+      height 0.5s ease 0.75s;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: $colorTextAccent;
+      border-color: transparent;
+    }
+
+    &:hover::before,
+    &:hover::after {
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+    }
+
+    &:hover::before {
+      border-top-color: $colorTextWhite;
+      border-right-color: $colorTextWhite;
+    }
+
+    &:hover::after {
+      border-bottom-color: $colorTextWhite;
+      border-left-color: $colorTextWhite;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      color: $colorTextAccent;
+      border-color: transparent;
+    }
+
+    &:active::before,
+    &:active::after {
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+    }
+
+    &:active::before {
+      border-top-color: $colorTextWhite;
+      border-right-color: $colorTextWhite;
+    }
+
+    &:active::after {
+      border-bottom-color: $colorTextWhite;
+      border-left-color: $colorTextWhite;
+    }
+  }
+}
+
+.form__wrapper--checkbox {
+  position: relative;
+}
+
+.form__checkbox {
+  display: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkmark {
+  width: 30px;
+  height: 30px;
+  &::before {
+    content: '';
+    display: none;
+    position: absolute;
+    width: 26px;
+    height: 22px;
+    background-image: url(../images/checkbox.svg);
+    background-repeat: no-repeat;
+    bottom: 10px;
+    left: 4px;
+  }
+}
+
+.checkbox__label {
+  .form__checkbox:checked + .checkmark {
+    &::before {
+      display: block;
+    }
+  }
+}
+
+.checkmark {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid $colorTextWhite;
+}
+
+.checkbox__agreement {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: $colorTextWhite;
+}
+
+.agreement__link {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.3s ease;
+
+  @media (hover: hover) {
+    &:hover {
+      color: $colorTextAccent;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      color: $colorTextAccent;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .form__submit {
+    max-width: 295px;
+  }
+}
+
+@media (min-width: 768px) {
+  .feedback__container {
+    padding-inline: 60px;
+    gap: 52px;
+  }
+}
+.feedback__title {
+  font-size: 30px;
+}
+
+.feedback__text {
+  font-size: 20px;
+}
+
+.form__wrapper--checkbox {
+  margin-bottom: 12px;
+}
+
+@media (min-width: 1200px) {
+  .feedback__container {
+    flex-direction: row;
+    gap: 150px;
+    justify-content: space-between;
+  }
+
+  .feedback__help {
+    max-width: 350px;
+    gap: 50px;
+  }
+
+  .feedback__title {
+    font-size: 54px;
+  }
+
+  .feedback__text {
+    font-size: 28px;
+  }
+
+  .feedback__form {
+    max-width: 510px;
+    flex-grow: 1;
+    gap: 52px;
+  }
+
+  .form__mixer {
+    gap: 42px;
+  }
+
+  .form__input {
+    font-size: 20px;
+  }
+
+  .form__wrapper--checkbox {
+    margin-bottom: 38px;
+  }
+
+  .form__submit {
+    max-width: inherit;
+  }
+}
