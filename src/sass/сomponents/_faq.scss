@@ -1,22 +1,38 @@
-.detail {
-  border-bottom: 1px solid #333;
-  margin-bottom: 15px;
-  padding: 10px 0;
+.faq__container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
+
 .faq__number {
   font-size: 20px;
+  line-height: 0.7;
+  font-family: $secondFamily;
 }
 
 .faq__title {
   font-size: 24px;
   font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   color: $colorTextTitle;
-  padding-bottom: 34px;
 }
-// question
+
+.details__container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.detail {
+  border-bottom: 1px solid #333;
+  padding-bottom: 24px;
+}
+
 .question__block {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 20px;
 }
 .question {
   font-size: 14px;
@@ -24,117 +40,129 @@
   outline: none;
   color: #fff;
   display: flex;
-}
-.question:hover {
-  color: $colorTextAccent;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.4s ease;
+
+  @media (hover: hover) {
+    &:hover {
+      color: $colorTextAccent;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      color: $colorTextAccent;
+    }
+  }
+
+  &::marker {
+    display: none;
+  }
 }
 
-.question::marker {
-  display: none;
-}
 .question_text {
-  max-width: 210px;
-  margin-left: 10px;
-  margin-right: 30px;
-  font-size: 14px;
-}
-// answer
-
-.answer {
-  display: none;
-  margin-top: 10px;
-  color: #aaa;
-}
-.answer {
-  margin-left: 35px;
-}
-.answer__text {
-  font-size: 12px;
   max-width: 200px;
-  margin-left: 8px;
+  font-size: 14px;
+  line-height: 1.25;
 }
 
 .question__btn {
   position: relative;
-  background: none;
-  border: 1px solid #fff;
+  color: $colorTextTitle;
   border-radius: 50%;
   width: 32px;
   height: 32px;
-  font-weight: bold;
+  font-size: 16px;
+  line-height: 0.7;
+  font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  outline: none;
-  transition: all 0.3s ease;
-  @include bg($colorTextTitle, 0.8);
+  transition: background-color 0.3s ease;
+  @include bg($colorTextWhite, 0.1);
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $colorTextAccentHover;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      background-color: $colorTextAccentHover;
+    }
+  }
 }
 
-.question__btn:hover {
-  background-color: $colorTextError;
-  color: black;
-  border-color: $colorTextError;
-}
-.question__btn::after {
-  content: 'Натисни на мене';
-  position: absolute;
-  bottom: 35px;
-  left: 50%;
-  transform: translateX(-95%);
-  background-color: #fff;
-  color: #121212;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 12px;
-  white-space: nowrap;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.question__btn:hover::after {
-  opacity: 1;
-  visibility: visible;
-}
 details[open] .answer {
   display: block;
 }
-// tablet
+
+// ANSWER
+
+.answer {
+  display: none;
+  margin-top: 16px;
+  margin-left: 32px;
+  animation: fadeTop 0.5s ease;
+}
+
+.answer__text {
+  font-size: 12px;
+  max-width: 200px;
+  line-height: 1.2;
+}
+
 @media (min-width: 768px) {
-  .question {
-    display: flex;
-    justify-content: space-between;
+  .detail {
+    padding-bottom: 28px;
   }
-  .question__block {
-    display: flex;
-    justify-content: center;
+
+  .faq__container {
+    padding-inline: 60px;
   }
+
   .faq__title {
     font-size: 30px;
   }
+
+  .question {
+    padding-right: 16px;
+  }
+
   .question_text {
     max-width: 460px;
     font-size: 16px;
+    line-height: 1.45;
   }
+
   .answer__text {
     font-size: 14px;
     max-width: 400px;
   }
-  .question__btn::after {
-    padding: 5px 15px;
-    font-size: 14px;
-  }
 }
-// desctop
+
 @media (min-width: 1200px) {
+  .faq__container {
+    gap: 50px;
+  }
+  .details__container {
+    gap: 85px;
+  }
+  .detail {
+    padding-bottom: 20px;
+  }
   .faq__title {
     font-size: 54px;
   }
+  .question__block {
+    gap: 32px;
+  }
   .question_text {
     max-width: 860px;
-    margin-left: 32px;
     font-size: 28px;
+    font-weight: 600;
   }
   .faq__number {
     font-size: 28px;
@@ -148,7 +176,16 @@ details[open] .answer {
     height: 42px;
     font-size: 20px;
   }
-  .question__btn::after {
-    bottom: 45px;
+}
+
+@keyframes showDisplay {
+  from {
+    display: none;
+    opacity: 0;
+  }
+
+  to {
+    display: block;
+    opacity: 1;
   }
 }
