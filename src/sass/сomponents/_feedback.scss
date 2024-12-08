@@ -52,6 +52,11 @@ body {
   width: 100%;
   border-bottom: 1px solid $colorFeedbackLine;
 
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px $colorBgBose inset;
+    box-shadow: 0 0 0px 1000px $colorBgBose inset;
+  }
+
   &:user-invalid {
     border-color: $FormError;
     color: $FormError;
@@ -63,6 +68,10 @@ body {
   min-height: 80px;
   border: none;
   border-bottom: 1px solid $colorFeedbackLine;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .form__wrapper--checkbox {
