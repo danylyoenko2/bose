@@ -37,11 +37,6 @@
   margin-bottom: 32px;
 }
 
-// .slider__img{
-//   min-width: 100%;
-// max-height: 664px;
-// }
-
 .bose__btn-box {
   margin-bottom: 32px;
   display: flex;
@@ -71,12 +66,7 @@
   content: '';
   width: 31px;
   height: 31px;
-  // border-radius: 50%;
-  // position: absolute;
-  // background-color: $colorTextAccentPrimary;
   position: absolute;
-  // width: 54px;
-  // height: 54px;
   display: block;
   background-color: $colorTextAccentPrimary;
   border-radius: 50%;
@@ -176,12 +166,6 @@
 }
 
 @media (min-width: 768px) {
-
-  // .bose__fullscreen-container {
-  //   display: flex;
-  //   justify-content: flex-end;
-  // }
-
   .slider-box {
     margin-bottom: 32px;
   }
@@ -191,8 +175,6 @@
   }
 
   .bose-slider__item {
-    // width: 648px;
-    // height: 446px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,33 +246,21 @@
   }
 
   .black {
-    // background-color: $colorTextAccentPrimary;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     width: 58px;
     height: 58px;
-    // position: relative;
   }
 
   .black::after {
-    // position: absolute;
     width: 42px;
     height: 42px;
   }
 
   .white {
-    // background-color: $colorTextBose;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     width: 58px;
     height: 58px;
-    // position: relative;
   }
 
   .white::after {
-    // position: absolute;
     width: 42px;
     height: 42px;
   }
@@ -304,12 +274,6 @@
     justify-content: flex-end;
   }
 
-  // .slider-box{
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  // }
-
   .slider {
     min-width: 700px;
     min-height: 664px;
@@ -320,17 +284,14 @@
     display: flex;
     transition: transform 0.3s ease-in-out;
     flex-direction: row;
-    // min-width: 100%;
     height: 664px;
   }
 
   .bose-slider__item {
     width: 50%;
     height: 664px;
-    // background-color: none;
     display: flex;
-  justify-content: start;
-  // align-items: center;
+    justify-content: start;
   }
 
   .slider__img {
@@ -391,9 +352,6 @@
     height: 68px;
     background-color: $colorTextAccent;
     cursor: pointer;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
     color: $boseTextColor2;
     font-size: 20px;
     font-weight: 600;
@@ -407,23 +365,11 @@
     display: block;
   }
 
-  // .bose__img-black {
-  //   // display: flex;
-  //   flex: 0 0 100%;
-  //   height: 100%;
-  // }
-
-  // .bose__img-white {
-  //   // display: flex;
-  //   flex: 0 0 100%;
-  //   height: 100%;
-  // }
-
   .oder-box {
     margin-right: 150px;
 
     .black::after {
-      content: ".";
+      content: '.';
       width: 54px;
       height: 54px;
     }
