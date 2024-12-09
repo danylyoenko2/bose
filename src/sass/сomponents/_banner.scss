@@ -1,0 +1,15 @@
+.banner {
+  padding-block: 90px 16px;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    padding-block: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner {
+    padding-block: 170px;
+  }
+}

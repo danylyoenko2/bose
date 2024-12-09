@@ -1,0 +1,45 @@
+// Плейсхолдеры для заголовков секции silense (мобильная версия)
+%title-large {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: $colorTextTitle;
+}
+
+%title-medium {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: $colorTextTitle;
+}
+
+%description-small {
+  font-size: 14px;
+  line-height: 1.45;
+  font-weight: 400;
+  color: rgba($colorTextWhite, 0.8);
+}
+
+@media (min-width: 768px) {
+  %title-large {
+    font-size: 30px;
+  }
+
+  %description-small {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  %title-large {
+    font-size: 54px;
+  }
+
+  %title-medium {
+    font-size: 28px;
+  }
+
+  %description-small {
+    font-size: 20px;
+  }
+}
