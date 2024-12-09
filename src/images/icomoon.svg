@@ -1,0 +1,5 @@
+<symbol id="icon-arow" viewBox="0 0 31 32">
+<path fill="#e5e5e5" style="fill: var(--color1, #e5e5e5)" d="M0 0h30.609v32h-30.609v-32z"></path>
+<path fill="#191919" style="fill: var(--color2, #191919)" d="M-791.652-10763.13h2003.478v13616.696h-2003.478v-13616.696z"></path>
+<path fill="none" stroke="#df3d3a" style="stroke: var(--color3, #df3d3a)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.7826" d="M1.391 29.783l27.826-27.826M29.217 1.957h-27.826M29.217 1.957v27.826"></path>
+</symbol>
