@@ -22,6 +22,7 @@ btn.addEventListener('click', function () {
 
       document.querySelector('.header').classList.remove('active');
       document.querySelector('.hero').classList.remove('active');
+      document.querySelector('body').classList.remove('no-scroll');
     });
   });
 });
