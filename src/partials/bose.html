@@ -1,23 +1,63 @@
 <section class="bose">
-  <div class="fullscreen-container bose__fullscreen-container">
+  <div class="fullscreen-container bose__container">
     <div class="slider-box">
       <h2 class="bose__title">bose nc 700</h2>
       <div class="slider">
         <ul data-container class="bose-slider__list">
           <li class="bose-slider__item">
-            <picture class="bose__img-black slider__img">
-              <!-- <source
+            <picture class="bose__photo">
+              <source
                 srcset="
                   ./images/pc-img/bose-nc700/headphones-black.webp    1x,
                   ./images/pc-img/bose-nc700/headphones-black@2x.webp 2x
                 "
+                media="(max-width:767px)"
                 type="image/webp"
-              /> -->
+              />
               <source
                 srcset="
                   ./images/pc-img/bose-nc700/headphones-black.jpg    1x,
                   ./images/pc-img/bose-nc700/headphones-black@2x.jpg 2x
                 "
+                media="(max-width:767px)"
+                type="image/jpg"
+              />
+
+              <!-- TABLET -->
+
+              <source
+                srcset="
+                  ./images/tablet-img/bose-ns700/headphones-black-tablet.webp    1x,
+                  ./images/tablet-img/bose-ns700/headphones-black-tablet@2x.webp 2x
+                "
+                media="(min-width:768px) and (max-width: 1199px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/tablet-img/bose-ns700/headphones-black-tablet.jpg    1x,
+                  ./images/tablet-img/bose-ns700/headphones-black-tablet@2x.jpg 2x
+                "
+                media="(min-width:768px) and (max-width: 1199px)"
+                type="image/jpg"
+              />
+
+              <!-- DESCTOP -->
+
+              <source
+                srcset="
+                  ./images/pc-img/bose-nc700/headphones-black.webp    1x,
+                  ./images/pc-img/bose-nc700/headphones-black@2x.webp 2x
+                "
+                media="(min-width:1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/pc-img/bose-nc700/headphones-black.jpg    1x,
+                  ./images/pc-img/bose-nc700/headphones-black@2x.jpg 2x
+                "
+                media="(min-width:1200px)"
                 type="image/jpg"
               />
               <img
@@ -27,19 +67,59 @@
             </picture>
           </li>
           <li class="bose-slider__item">
-            <picture class="bose__img-white slider__img">
-              <!-- <source
+            <picture class="bose__photo">
+              <source
                 srcset="
                   ./images/pc-img/bose-nc700/headphones-white.webp    1x,
                   ./images/pc-img/bose-nc700/headphones-white@2x.webp 2x
                 "
+                media="(max-width:767px)"
                 type="image/webp"
-              /> -->
+              />
               <source
                 srcset="
                   ./images/pc-img/bose-nc700/headphones-white.jpg    1x,
                   ./images/pc-img/bose-nc700/headphones-white@2x.jpg 2x
                 "
+                media="(max-width:767px)"
+                type="image/jpg"
+              />
+
+              <!-- TABLET -->
+
+              <source
+                srcset="
+                  ./images/tablet-img/bose-ns700/headphones-white-tablet.webp    1x,
+                  ./images/tablet-img/bose-ns700/headphones-white-tablet@2x.webp 2x
+                "
+                media="(min-width:768px) and (max-width: 1199px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/tablet-img/bose-ns700/headphones-white-tablet.jpg    1x,
+                  ./images/tablet-img/bose-ns700/headphones-white-tablet@2x.jpg 2x
+                "
+                media="(min-width:768px) and (max-width: 1199px)"
+                type="image/jpg"
+              />
+
+              <!-- DESCTOP -->
+
+              <source
+                srcset="
+                  ./images/pc-img/bose-nc700/headphones-white.webp    1x,
+                  ./images/pc-img/bose-nc700/headphones-white@2x.webp 2x
+                "
+                media="(min-width:1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/pc-img/bose-nc700/headphones-white.jpg    1x,
+                  ./images/pc-img/bose-nc700/headphones-white@2x.jpg 2x
+                "
+                media="(min-width:1200px)"
                 type="image/jpg"
               />
               <img
@@ -51,21 +131,21 @@
         </ul>
       </div>
     </div>
-    <div class="oder-box">
+    <div class="order">
       <h2 class="bose__title bose__title--desctop">bose nc 700</h2>
       <div data-slider-nav class="bose__btn-box">
-        <button data-slide="0" class="bose__button black"></button>
-        <button data-slide="1" class="bose__button white"></button>
+        <button data-slide="0" class="bose__button active-btn"></button>
+        <button
+          data-slide="1"
+          class="bose__button bose__button--white"
+        ></button>
       </div>
-      <ul class="bose__list">
-        <li class="bose__item">
-          <p class="bose__text">Availability in stores</p>
-          <a href="#" class="bose__link">
-            <!-- <svg class="bose__icon">
-              <use href="./images/icomoon.svg#icon-arow"></use>
-            </svg> -->
+      <ul class="order__list">
+        <li class="order__item">
+          <p class="order__text">Availability in stores</p>
+          <a href="#" class="order__link">
             <svg
-              class="bose__icon"
+              class="order__icon"
               xmlns="http://www.w3.org/2000/svg"
               width="22"
               height="23"
@@ -80,14 +160,11 @@
             </svg>
           </a>
         </li>
-        <li class="bose__item">
-          <p class="bose__text">Characteristics</p>
-          <a href="#" class="bose__link">
-            <!-- <svg class="bose__icon">
-              <use href="./images/icomoon.svg#icon-arow"></use>
-            </svg> -->
+        <li class="order__item order__item--second">
+          <p class="order__text">Characteristics</p>
+          <a href="#" class="order__link">
             <svg
-              class="bose__icon"
+              class="order__icon"
               xmlns="http://www.w3.org/2000/svg"
               width="22"
               height="23"
@@ -102,14 +179,11 @@
             </svg>
           </a>
         </li>
-        <li class="bose__item">
-          <p class="bose__text">Payment and delivery methods</p>
-          <a href="#" class="bose__link">
-            <!-- <svg class="bose__icon">
-              <use href="./images/icomoon.svg#icon-arow"></use>
-            </svg> -->
+        <li class="order__item order__item--third">
+          <p class="order__text">Payment and delivery methods</p>
+          <a href="#" class="order__link">
             <svg
-              class="bose__icon"
+              class="order__icon"
               xmlns="http://www.w3.org/2000/svg"
               width="22"
               height="23"
@@ -126,8 +200,8 @@
         </li>
       </ul>
       <div class="accommodation">
-        <h3 class="bose__subtitle">14 999 UAH</h3>
-        <button class="bose__submit-button">order</button>
+        <h3 class="accommodation__price">14 999 UAH</h3>
+        <button class="accommodation__submit">order</button>
       </div>
     </div>
   </div>
