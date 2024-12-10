@@ -1,15 +1,23 @@
+.bose__container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
 .slider {
   overflow: hidden;
   max-width: 700px;
 }
 
 .slider-box {
-  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .bose-slider__list {
   display: flex;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.4s ease;
   flex-direction: row;
   min-width: 100%;
 }
@@ -25,379 +33,243 @@
   font-size: 24px;
   font-weight: 600;
   line-height: 1.2;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
-  margin-bottom: 32px;
 }
 
 .bose__title--desctop {
   display: none;
-  font-size: 24px;
-  letter-spacing: 0.48px;
-  margin-bottom: 32px;
 }
 
-.bose__btn-box {
-  margin-bottom: 32px;
+.order {
   display: flex;
+  flex-direction: column;
+
   gap: 32px;
 }
 
+.bose__btn-box {
+  display: flex;
+  gap: 24px;
+}
+
 .bose__button {
-  border-radius: 50%;
-  border: solid $colorBgBose;
-  cursor: pointer;
+  border-radius: 100%;
+  background-color: $colorBgButton;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 0;
   width: 44px;
   height: 44px;
-}
-
-.black {
-  background-color: $colorBgBose;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+
+  &:after {
+    content: '';
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background-color: $colorTextAccentPrimary;
+  }
+
+  &.active-btn::after {
+    border: 2px solid $colorTextAccent;
+    width: 30px;
+    height: 30px;
+  }
 }
 
-.black::after {
-  content: '';
-  width: 31px;
-  height: 31px;
-  position: absolute;
-  display: block;
-  background-color: $colorTextAccentPrimary;
-  border-radius: 50%;
+.bose__button--white {
+  @include bg($colorTextWhite, 0.8);
+
+  &:after {
+    @include bg($colorTextWhite, 0.8);
+  }
 }
 
-.black:focus::after {
-  border: 2px solid $colorTextAccent;
-}
-
-.white {
-  background-color:$colorBgBose;
+.order__list {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  position: relative;
+  flex-direction: column;
+  gap: 25px;
 }
 
-.white::after {
-  content: '';
-  width: 31px;
-  height: 31px;
-  position: absolute;
-  display: block;
-  background-color: $colorTextWhite;
-  border-radius: 50%;
-}
-
-.white:focus::after {
-  border: 2px solid $colorTextAccent;
-}
-
-.bose__list {
-  margin-bottom: 32px;
-}
-
-.bose__item {
+.order__item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 26px;
-  padding-bottom: 26px;
-  min-width: 280px;
+  padding-top: 25px;
+  border-top: 2px solid #6e6e6ecc;
 }
 
-.bose__item:first-child {
-  border-bottom: solid #6e6e6ecc;
-  border-top: solid #6e6e6ecc;
+.order__item--third {
+  border-bottom: 2px solid #6e6e6ecc;
+  padding-bottom: 25px;
 }
 
-.bose__item:last-child {
-  border-bottom: solid #6e6e6ecc;
-  border-top: solid #6e6e6ecc;
-}
-
-.bose__link {
-  width: 20px;
-  height: 20px;
-}
-
-.bose__icon {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.bose-text {
-  font-size: 16px;
-  font-weight: 400;
+.order__text {
   line-height: 1.25;
 }
 
-.bose__subtitle {
+.accommodation {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.accommodation__price {
   color: $colorTextAccent;
   font-size: 24px;
   font-weight: 600;
-  line-height: 1.2; /* 28.8px */
+  line-height: 1.2;
   letter-spacing: 0.48px;
   text-transform: uppercase;
-  margin-bottom: 24px;
 }
 
-.bose__submit-button {
+.accommodation__submit {
+  padding-block: 19px;
+  @include color($colorTextWhite, 0.9);
   background-color: $colorTextAccent;
-  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: $colorBgBose;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.32px;
-  text-transform: uppercase;
-  width: 294px;
-  height: 58px;
-}
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    to right,
+    transparent 50%,
+    $colorTextAccentHover 50%
+  );
+  transition: background-position 0.2s ease, background-color 0.3s ease;
 
-@media (min-width: 768px) {
-  .slider-box {
-    margin-bottom: 32px;
+  @media (hover: hover) {
+    &:hover {
+      background-position: -100% 100%;
+      background-color: $colorTextAccentHover;
+    }
   }
 
-  .bose__fullscreen-container {
+  @media (hover: none) {
+    &:active {
+      background-position: -100% 100%;
+      background-color: $colorTextAccentHover;
+    }
+  }
+}
+
+// MEDIA
+
+@media (min-width: 768px) {
+  .bose__container {
     padding-inline: 60px;
   }
 
-  .bose-slider__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $colorBgBose;
-  }
-
   .bose__title {
-    color: $colorTextTitle;
     font-size: 30px;
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: 0.6px;
-    text-transform: uppercase;
   }
 
   .bose__title--desctop {
     display: none;
   }
 
-  .bose__btn-box {
-    margin-bottom: 40px;
+  .bose__photo {
+    max-width: 650px;
+  }
+
+  .order {
+    gap: 40px;
   }
 
   .bose__button {
     width: 58px;
     height: 58px;
-    border-radius: 100%;
+
+    &::after {
+      width: 42px;
+      height: 42px;
+    }
+
+    &.active-btn::after {
+      width: 40px;
+      height: 40px;
+    }
   }
 
-  .bose__list {
-    margin-bottom: 52px;
+  .order__list {
+    margin-bottom: 12px;
   }
 
-  .bose__item {
-    width: 100%;
-    padding-top: 25px;
-    padding-bottom: 25px;
+  .accommodation {
+    gap: 32px;
   }
 
-  .bose__link {
-    width: 20px;
-    height: 20px;
-  }
-
-  .bose__icon {
-    width: 100%;
-    height: 100%;
-  }
-
-  .bose__subtitle {
+  .accommodation__price {
     font-size: 30px;
-    letter-spacing: 0.6px;
-    margin-bottom: 32px;
   }
 
-  .bose__submit-button {
-    width: 294px;
-    height: 58px;
-  }
-
-  .bose__img-black {
-    width: 446px;
-    height: 446px;
-  }
-
-  .bose__img-white {
-    width: 446px;
-    height: 446px;
-  }
-
-  .black {
-    width: 58px;
-    height: 58px;
-  }
-
-  .black::after {
-    width: 42px;
-    height: 42px;
-  }
-
-  .white {
-    width: 58px;
-    height: 58px;
-  }
-
-  .white::after {
-    width: 42px;
-    height: 42px;
+  .accommodation__submit {
+    max-width: 295px;
   }
 }
 
 @media (min-width: 1200px) {
-  .bose__fullscreen-container {
-    justify-content: center;
+  .bose__container {
+    padding-inline: 0px;
     flex-direction: row-reverse;
-    display: flex;
-    justify-content: flex-end;
+    gap: 150px;
   }
 
-  .slider {
-    min-width: 700px;
-    min-height: 664px;
-    overflow: hidden;
+  .bose__photo {
+    max-width: 700px;
   }
 
-  .bose-slider__list {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-    flex-direction: row;
-    height: 664px;
+  .order {
+    gap: 50px;
+    flex-grow: 1;
+    max-width: 400px;
   }
 
-  .bose-slider__item {
-    width: 50%;
-    height: 664px;
-    display: flex;
-    justify-content: start;
-  }
-
-  .slider__img {
-    width: 700px;
-    height: 664px;
-  }
-
-  .oder-box {
-    margin-right: 150px;
+  .order__list {
+    margin-bottom: 0px;
+    max-width: 400px;
   }
 
   .bose__title {
     display: none;
-    color: $colorTextTitle;
     font-size: 54px;
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: 1.08px;
-    text-transform: uppercase;
-    margin-bottom: 50px;
   }
 
   .bose__title--desctop {
     display: block;
-    font-size: 54px;
   }
 
   .bose__btn-box {
     display: flex;
     gap: 20px;
-    margin-bottom: 50px;
   }
 
   .bose__button {
     width: 70px;
     height: 70px;
-    border-radius: 50%;
-    border: solid $colorBgBose;
-    cursor: pointer;
+
+    &:after {
+      width: 54px;
+      height: 54px;
+    }
+
+    &.active-btn:after {
+      width: 52px;
+      height: 52px;
+    }
   }
 
-  .bose__list {
-    margin-bottom: 50px;
-  }
-
-  .bose__subtitle {
-    color: $colorTextAccent;
+  .accommodation__price {
     font-size: 54px;
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: 1.08px;
-    text-transform: uppercase;
-    margin-bottom: 32px;
   }
 
-  .bose__submit-button {
-    width: 400px;
-    height: 68px;
-    background-color: $colorTextAccent;
-    cursor: pointer;
-    color: $colorBgBose;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0.4px;
-    text-transform: uppercase;
-  }
-
-  .bose__icon {
-    width: 20px;
-    height: 20px;
-    display: block;
-  }
-
-  .oder-box {
-    margin-right: 150px;
-
-    .black::after {
-      content: '.';
-      width: 54px;
-      height: 54px;
-    }
-
-    .black::after:hover,
-    :focus {
-      border: solid $colorTextAccent;
-    }
-
-    .white {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .white::after {
-      content: '';
-      width: 54px;
-      height: 54px;
-    }
-
-    .white::after:hover,
-    :focus {
-      border: solid $colorTextAccent;
-    }
-
-    .accommodation {
-      display: block;
-    }
+  .accommodation__submit {
+    max-width: 400px;
+    padding-block: 22px;
   }
 }
