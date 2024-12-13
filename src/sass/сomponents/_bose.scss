@@ -6,7 +6,6 @@
 
 .slider {
   overflow: hidden;
-  max-width: 700px;
 }
 
 .slider-box {
@@ -211,8 +210,9 @@
 
 @media (min-width: 1200px) {
   .slider {
-  max-width: 700px;
-}
+    max-width: 700px;
+  }
+  
   .bose__container {
     padding-inline: 0px;
     flex-direction: row-reverse;
