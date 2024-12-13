@@ -210,6 +210,9 @@
 }
 
 @media (min-width: 1200px) {
+  .slider {
+  max-width: 700px;
+}
   .bose__container {
     padding-inline: 0px;
     flex-direction: row-reverse;
