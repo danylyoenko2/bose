@@ -40,7 +40,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 40px;
+  gap: 32px;
 }
 
 .order__title {
@@ -91,7 +91,7 @@
 
 // MEDIA
 
-@media (min-width: 768px) {
+@media (min-width: 768px){
   .hero {
     &.active {
       padding-top: 112px;
@@ -111,6 +111,7 @@
 
   .hero__order {
     max-width: 295px;
+    gap: 41px;
   }
 
   .order__title {
@@ -118,6 +119,8 @@
   }
 
   .hero__picture {
+    width: 354px; 
+    height: 394px;
     align-self: flex-end;
   }
 }
@@ -126,7 +129,9 @@
   .hero__container {
     align-items: flex-start;
   }
-
+  .hero__mix {
+    gap: 94px;
+  }
   .features__list {
     align-self: flex-start;
   }
@@ -138,6 +143,7 @@
   .hero__order {
     padding-left: 100px;
     max-width: none;
+    gap: 86px;
   }
 
   .order__title {
@@ -152,5 +158,7 @@
 
   .hero__picture {
     max-width: 700px;
+    height: auto; 
+    width: 100%; 
   }
 }
