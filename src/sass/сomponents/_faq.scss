@@ -1,6 +1,5 @@
 .faq {
   padding-bottom: 32px;
-  margin-top: 16px;
 }
 
 .faq__container {
@@ -128,6 +127,11 @@ details[open] .answer {
   .faq {
   padding-bottom: 100px;
   }
+
+  .faq__container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
   .detail {
     padding-bottom: 28px;
