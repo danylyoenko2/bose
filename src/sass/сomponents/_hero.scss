@@ -119,8 +119,7 @@
   }
 
   .hero__picture {
-    width: 354px; 
-    height: 394px;
+    max-width: 354px; 
     align-self: flex-end;
   }
 }
