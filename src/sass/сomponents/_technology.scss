@@ -41,6 +41,7 @@
   .technology__container {
     flex-direction: row;
     justify-content: flex-end;
+    padding-left: 60px;
     gap: 60px;
   }
 
@@ -67,8 +68,8 @@
   }
 
   .technology__container {
-    justify-content: flex-end;
     gap: 170px;
+    justify-content: flex-end;
   }
 
   .technology__content {
