@@ -6,6 +6,8 @@
 
 .guarantees__content {
   gap: 32px;
+  display: flex;
+  flex-direction: column;
 }
 
 .guarantees__list {
@@ -18,12 +20,6 @@
   flex-direction: column;
   gap: 16px;
 }
-
-.guarantees__dot {
-  margin-bottom: 24px;
-  margin-top: 32px;
-}
-
 .guarantees__title {
   @extend %title-large;
 }
