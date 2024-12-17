@@ -150,9 +150,10 @@ details[open] .answer {
   }
 
   .question_text {
-    max-width: 460px;
+    // max-width: 460px;
     font-size: 16px;
     line-height: 1.45;
+    flex-grow: 1;
   }
 
   .answer__text {
@@ -182,9 +183,10 @@ details[open] .answer {
     gap: 32px;
   }
   .question_text {
-    max-width: 860px;
+    // max-width: 860px;
     font-size: 28px;
     font-weight: 600;
+    flex-grow: 1;
   }
   .faq__number {
     font-size: 28px;
