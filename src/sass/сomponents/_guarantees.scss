@@ -40,17 +40,18 @@
     flex-direction: row-reverse;
     gap: 60px;
     justify-content: flex-end;
+    padding-right: 60px;
   }
 
   .guarantees__content {
     display: flex;
     flex-direction: column;
     text-align: left;
-    max-width: 295px;
+    flex-grow: 1;
   }
 
   .guarantees__photo {
-    max-width: 355px;
+    max-width: 500px;
   }
 }
 

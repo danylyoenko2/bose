@@ -39,7 +39,9 @@
 
 .slider__video {
   min-height: 180px;
-  min-width: 70%;
+  min-width: 100%;
+  aspect-ratio: 1.55;
+  border: none;
 }
 
 .reviews__mix {
@@ -98,20 +100,10 @@
 
 // MEDIA
 
-@media (min-width: 400px) {
-  .slider__video {
-    height: 300px;
-  }
-}
-
 @media (min-width: 768px) {
   .reviews {
     padding-inline: 60px;
     padding-bottom: 100px;
-  }
-  .slider__video {
-    height: 415px;
-    min-width: 100%;
   }
 
   .reviews__title {
@@ -123,17 +115,11 @@
     line-height: 1.45;
   }
 }
-
-@media (min-width: 991px) {
-  .slider__video {
-    height: 500px;
-  }
-}
-
 @media (min-width: 1200px) {
   .reviews {
     padding-bottom: 170px;
   }
+
   .reviews__container {
     flex-direction: row;
     justify-content: space-between;
@@ -170,7 +156,7 @@
   }
 
   .slider__video {
-    height: 590px;
+    max-height: 590px;
   }
 
   .about__title {

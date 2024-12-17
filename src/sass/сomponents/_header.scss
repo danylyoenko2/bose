@@ -29,11 +29,13 @@
 
 .nav {
   display: none;
+  opacity: 0;
 
   &.open {
     position: absolute;
     top: 52px;
     animation: showMenu 0.5s ease;
+    opacity: 1;
   }
 }
 
@@ -157,6 +159,7 @@
     &.open {
       top: inherit;
       position: relative;
+      animation-duration: 1s;
     }
   }
 
@@ -187,6 +190,7 @@
 
   .nav {
     display: block;
+    opacity: 1;
   }
 
   .nav__menu {
@@ -208,12 +212,9 @@
     opacity: 0;
   }
 
-  60% {
-    opacity: 1;
-  }
-
   to {
     display: flex;
+    opacity: 1;
     transform: translateX(0);
   }
 }
