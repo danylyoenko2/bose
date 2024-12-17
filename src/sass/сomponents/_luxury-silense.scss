@@ -1,6 +1,7 @@
 // Применение плейсхолдеров
 .silense__title {
   @extend %title-large;
+  text-transform: uppercase;
 }
 
 .silence__title {
@@ -30,7 +31,6 @@
 .silence__item {
   display: flex;
   flex-direction: column;
-  max-width: 280px;
   gap: 16px;
 }
 
@@ -42,16 +42,13 @@
   }
   .silense__title {
     padding-right: 60px;
+    align-self: flex-end;
   }
 
   .silence__list {
     padding-inline: 60px;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
-
-    &.silence__item {
-      max-width: 295px;
-    }
   }
   .features {
     flex-direction: row;
