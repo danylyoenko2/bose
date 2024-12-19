@@ -99,6 +99,7 @@
   &:after {
     content: '';
     position: absolute;
+    display: inline-block;
     @include bg($colorTextAccent, 0.2);
     width: 5px;
     height: 2px;
