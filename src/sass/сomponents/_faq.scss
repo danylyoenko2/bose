@@ -6,6 +6,8 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .faq__number {
@@ -42,11 +44,12 @@
   font-size: 14px;
   cursor: pointer;
   outline: none;
-  color: #fff;
+  color: $colorTextWhite;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: color 0.4s ease;
+  gap: 16px;
 
   @media (hover: hover) {
     &:hover {
@@ -69,6 +72,7 @@
   max-width: 200px;
   font-size: 14px;
   line-height: 1.25;
+  flex-grow: 1;
 }
 
 .question__btn {
@@ -84,6 +88,7 @@
   justify-content: center;
   align-items: center;
   transition: background-color 0.3s ease;
+  pointer-events: none;
   @include bg($colorTextWhite, 0.1);
 
   @media (hover: hover) {
@@ -123,6 +128,11 @@ details[open] .answer {
   padding-bottom: 100px;
   }
 
+  .faq__container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
   .detail {
     padding-bottom: 28px;
   }
@@ -143,6 +153,7 @@ details[open] .answer {
     max-width: 460px;
     font-size: 16px;
     line-height: 1.45;
+    flex-grow: 1;
   }
 
   .answer__text {
@@ -172,9 +183,10 @@ details[open] .answer {
     gap: 32px;
   }
   .question_text {
-    max-width: 860px;
+     max-width: 860px;
     font-size: 28px;
     font-weight: 600;
+    flex-grow: 1;
   }
   .faq__number {
     font-size: 28px;
