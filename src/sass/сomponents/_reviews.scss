@@ -92,6 +92,28 @@
   font-size: 20px;
   line-height: 1.25;
   background-color: transparent;
+  position: relative;
+
+  &.active-btn::after {
+    background-color: $colorTextAccent;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    @include bg($colorTextAccent, 0.2);
+    width: 5px;
+    height: 2px;
+    top: 50%;
+    right: -20px;
+  }
+}
+
+.pavigation__btn--last {
+  &::after {
+    display: none;
+  }
 }
 
 .active-btn {
@@ -173,5 +195,10 @@
 
   .pavigation__btn {
     font-size: 28px;
+
+    &::after {
+      right: -16px;
+      width: 7px;
+    }
   }
 }
