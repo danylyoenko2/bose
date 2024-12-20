@@ -1,6 +1,10 @@
 body {
   background-color: $colorBgBose;
 }
+.feedback {
+  padding-bottom: 72px;
+}
+
 .feedback__container {
   display: flex;
   flex-direction: column;
@@ -256,6 +260,9 @@ body {
     gap: 52px;
   }
 }
+.feedback {
+  padding-bottom: 100px;
+}
 .feedback__title {
   font-size: 30px;
 }
@@ -274,7 +281,9 @@ body {
     gap: 150px;
     justify-content: space-between;
   }
-
+  .feedback {
+    padding-bottom: 170px;
+  }
   .feedback__help {
     max-width: 350px;
     gap: 50px;
@@ -286,6 +295,7 @@ body {
 
   .feedback__text {
     font-size: 28px;
+    max-width: 400px;
   }
 
   .feedback__form {
