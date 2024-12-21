@@ -1,77 +1,120 @@
 <section class="history">
-  <div class="fullscreen-container history__fullscreen-container">
-    <h2 class="history__title">BRAND CREATION HISTORY</h2>
-    <div class="block__one">
-      <p class="history__description">
-        The history of Bose Corporation began with disappointment. In 1956, MIT
-        graduate student Amar Bose bought one of the best stereo systems at the
-        time for his home. After a few minutes of listening to the audio
-        recording, his bewilderment turned to disappointment.
-      </p>
-      <picture>
+  <div class="fullscreen-container history__container">
+    <div class="history__content">
+      <div class="history__about">
+        <h2 class="history__title">brand creation history</h2>
+        <p class="history__text history__text--first">
+          The history of Bose Corporation began with disappointment. In 1956,
+          MIT graduate student Amar Bose bought one of the best stereo systems
+          at the time for his home. After a few minutes of listening to the
+          audio recording, his bewilderment turned to disappointment.
+        </p>
+        <p class="history__text">
+          From Amar's point of view, the sound was so flat and unnatural that it
+          was better not to listen to the music at all than to listen to it in
+          such a distorted form.
+        </p>
+      </div>
+      <picture class="history__photo">
         <source
           srcset="
-            ./images/pc-img/silense/brand-history@2x.webp 2x,
-            ./images/pc-img/silense/brand-history.webp    1x
+            ./images/pc-img/silense/brand-history.webp    1x,
+            ./images/pc-img/silense/brand-history@2x.webp 2x
           "
+          media="(max-width:767px) "
           type="image/webp"
         />
         <source
           srcset="
-            ./images/pc-img/silense/brand-history@2x.jpg 2x,
-            ./images/pc-img/silense/brand-history.jpg    1x
+            ./images/pc-img/silense/brand-history.jpg    1x,
+            ./images/pc-img/silense/brand-history@2x.jpg 2x
           "
+          media="(max-width:767px) "
+          type="image/jpeg"
+        />
+        <source
+          srcset="
+            ./images/tablet-img/silense/brand-history-tablet.webp    1x,
+            ./images/tablet-img/silense/brand-history-tablet@2x.webp 2x
+          "
+          media="(min-width:768px) and (max-width:1199px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/tablet-img/silense/brand-history-tablet.jpg    1x,
+            ./images/tablet-img/silense/brand-history-tablet@2x.jpg 2x
+          "
+          media="(min-width:768px) and (max-width:1199px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/pc-img/silense/brand-history.webp    1x,
+            ./images/pc-img/silense/brand-history@2x.webp 2x
+          "
+          media="(min-width:1200px) "
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/pc-img/silense/brand-history.jpg    1x,
+            ./images/pc-img/silense/brand-history@2x.jpg 2x
+          "
+          media="(min-width:1200px) "
           type="image/jpeg"
         />
         <img
-          class="image-picture__one"
           src="./images/pc-img/silense/brand-history.jpg"
-          alt="Bose Corporation history photo"
+          alt="history-photo"
+          class="history__img"
         />
       </picture>
-
-      <p class="history__description">
-        From Amar's point of view, the sound was so flat and unnatural that it
-        was better not to listen to the music at all than to listen to it in
-        such a distorted form.
-      </p>
     </div>
-    <div class="block__two">
-      <h2 class="history__title--desktop">BRAND CREATION HISTORY</h2>
-      <p class="history__description">
+
+    <div class="history__content history__content--second">
+      <p class="history__text history__text--mobile">
         Bose's frustration grew into a firm determination to build audio
         equipments that would reproduce sound with impeccable accuracy and
         naturalness
       </p>
-      <picture>
+
+      <picture class="history__photo--second">
         <source
           srcset="
-            ./images/pc-img/silense/silense-men@2x.webp 2x,
-            ./images/pc-img/silense/silense-men.webp    1x
+            ./images/pc-img/silense/silense-men.webp    1x,
+            ./images/pc-img/silense/silense-men@2x.webp 2x
           "
           type="image/webp"
         />
         <source
           srcset="
-            ./images/pc-img/silense/silense-men@2x.jpg 2x,
-            ./images/pc-img/silense/silense-men.jpg    1x
+            ./images/pc-img/silense/silense-men.jpg    1x,
+            ./images/pc-img/silense/silense-men@2x.jpg 2x
           "
           type="image/jpeg"
         />
         <img
-          class="image-picture__two"
+          class="silense__men"
           src="./images/pc-img/silense/silense-men.jpg"
-          alt="Portrait of a man sharing his testimonial"
+          alt="silense-man"
         />
       </picture>
 
-      <blockquote class="testimonial__quote">
-        <p class="testimonial__text">
-          Never stop dreaming. Always dream of the best, and think about how to
-          achieve it.
+      <div class="history__quote">
+        <p class="history__text history__text--tablet">
+          Bose's frustration grew into a firm determination to build audio
+          equipments that would reproduce sound with impeccable accuracy and
+          naturalness
         </p>
-      </blockquote>
-      <p class="testimonial__description">Amar Bose is a company founder</p>
+        <div class="quote__mix">
+          <p class="quote__title">
+            Never stop dreaming. Always dream of the best, and think about how
+            to achieve it.
+          </p>
+          <p class="quote__subtitle">Amar Bose is a company founder</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
