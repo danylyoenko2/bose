@@ -6,6 +6,8 @@
 
 .guarantees__content {
   gap: 32px;
+  display: flex;
+  flex-direction: column;
 }
 
 .guarantees__list {
@@ -40,24 +42,37 @@
     flex-direction: row-reverse;
     gap: 60px;
     justify-content: flex-end;
+    padding-right: 60px;
   }
 
   .guarantees__content {
     display: flex;
     flex-direction: column;
     text-align: left;
-    max-width: 295px;
+    flex-grow: 1;
   }
 
   .guarantees__photo {
-    max-width: 355px;
+    max-width: 500px;
   }
 }
 
 @media (min-width: 1200px) {
   .guarantees__container {
     justify-content: flex-end;
+    position: relative;
     gap: 150px;
+    &::after {
+      content: '';
+      display: inline-block;
+      bottom: 0px;
+      right: 0;
+      width: 275px;
+      position: absolute;
+      height: 112px;
+      background-image: url(../images/wave.svg);
+      background-repeat: no-repeat;
+    }
   }
 
   .guarantees__content {
