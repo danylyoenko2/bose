@@ -6,11 +6,12 @@ img {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   background-color: $colorBgBose;
-  overflow-x: hidden;
+  
 }
 
 ::-webkit-scrollbar {
